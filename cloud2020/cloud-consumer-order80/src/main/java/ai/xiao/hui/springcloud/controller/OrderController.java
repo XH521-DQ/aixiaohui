@@ -21,6 +21,7 @@ public class OrderController {
 
     @GetMapping("/payment/get/{id}")
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id){
+        //测试git提交
         return restTemplate.getForObject(PAYMENT_URL+"/payment/get/"+id,CommonResult.class);
     }
     @GetMapping("/payment/discovery")
