@@ -11,7 +11,6 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderZkController {
     public static final String PROVIDER_ZK_URL="http://cloud-provider-payment";
-
     @Resource
     private RestTemplate restTemplate;
     @RequestMapping("/consumer/payment/zk")
