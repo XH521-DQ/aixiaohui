@@ -15,5 +15,9 @@ eureka:
     instance-id: cloud-order-server
     prefer-ip-address: true
 ribbon:
-  ReadTimeout: 5000
-  ConnectTimeout: 5000
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+
+feign:
+  hystrix:
+    enabled: true
