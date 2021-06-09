@@ -14,3 +14,6 @@ eureka:
   instance:
     instance-id: cloud-order-server
     prefer-ip-address: true
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
