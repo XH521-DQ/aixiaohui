@@ -5,11 +5,16 @@ spring:
     name: cloud-gateway
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: payment_routh1
-          uri: http://localhost:8001
+          uri: lb://CLOUD-PAYMENT-SERVICE
           predicates:
             - Path=/payment/**
+#            - After=2021-06-10T14:44:32.336+08:00[Asia/Shanghai]
+#            - Cookie=username,xiaohui
 eureka:
   client:
     service-url:
