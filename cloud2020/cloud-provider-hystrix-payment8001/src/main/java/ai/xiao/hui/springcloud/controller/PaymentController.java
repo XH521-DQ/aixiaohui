@@ -31,4 +31,13 @@ public class PaymentController {
         log.info(result);
         return result;
     }
+
+    //服务熔断
+    @GetMapping("/payment/hystrix/break/{id}")
+    public String paymentInfo_Break(@PathVariable("id") Integer id){
+        String result = paymentService.paymentInfo_Break(id);
+        log.info(result);
+        return result;
+    }
+
 }

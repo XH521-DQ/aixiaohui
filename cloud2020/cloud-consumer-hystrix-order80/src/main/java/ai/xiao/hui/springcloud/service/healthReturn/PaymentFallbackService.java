@@ -1,4 +1,4 @@
-package ai.xiao.hui.springcloud.service.service;
+package ai.xiao.hui.springcloud.service.healthReturn;
 
 import ai.xiao.hui.springcloud.service.PaymentHystrixService;
 import org.springframework.stereotype.Component;

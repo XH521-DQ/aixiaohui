@@ -1,6 +1,6 @@
 package ai.xiao.hui.springcloud.service;
 
-import ai.xiao.hui.springcloud.service.service.PaymentFallbackService;
+import ai.xiao.hui.springcloud.service.healthReturn.PaymentFallbackService;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
